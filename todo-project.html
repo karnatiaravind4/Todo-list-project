@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Todo</title>
+            <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+
+        <input placeholder="todo" class="in" onkeyup="if(event.key==='Enter'){addTodo();}" >
+        <input type="date" class="date" onkeyup="if(event==='Enter'){addTodo();}">
+        <button onclick='addTodo();' class="one">Add</button>
+        <div class="work"></div>
+        <script>
+            function addTodo(){
+               const input=document.querySelector('.in');
+                const dateinput=document.querySelector('.date');
+                if(input.value!==""&&dateinput.value!==""){
+                document.querySelector('.work').innerHTML+=`
+                <div style="display:contents;">
+                <span>${input.value}</span>
+                <span>${dateinput.value}</span>
+                <button onclick="this.parentNode.remove()">Delete</button><br>
+                </div>
+                `;
+                input.value="";
+                dateinput.value=""; }
+                else{
+                    alert("Please enter both todo and date");
+                }
+                
+
+            }
+        </script>
+    </body>
+</html>
+
