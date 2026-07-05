@@ -1,0 +1,32 @@
+.work {
+  display: grid;
+  grid-template-columns: 200px 150px 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+.one{
+    margin-left:43.5px;
+    margin-bottom:15px;
+    width:98px;
+    background-color: green;
+    border-color:black;
+    border-radius:10px;
+    font-weight: bold;
+    text-align: center;
+    padding:5px;
+    cursor:pointer;
+    color:white;
+}
+button{
+    background-color:red;
+    border-color:black;
+    border-radius:10px;
+    font-weight: bold;
+    text-align: center;
+    padding:5px;
+    color:white;
+}
+.date{
+    margin-left:30px;
+}
